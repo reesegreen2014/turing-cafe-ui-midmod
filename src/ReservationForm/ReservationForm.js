@@ -14,13 +14,13 @@ function ReservationForm({addReservation}) {
             name,
             date,
             time,
-            number: parseInt(number, 10)
+            number: parseInt(number)
         };
         addReservation(newReservation);
         setName('');
-        setDate();
-        setTime();
-        setNumber();
+        setDate('');
+        setTime('');
+        setNumber('');
     };
 
   return (
@@ -47,7 +47,7 @@ function ReservationForm({addReservation}) {
             required
         />
         <input 
-            type="text"
+            type="number"
             placeholder='Number of guests'
             value={number}
             onChange={(event) => setNumber(event.target.value)}
