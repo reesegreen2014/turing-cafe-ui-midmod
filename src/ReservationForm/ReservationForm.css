@@ -1,0 +1,17 @@
+.resy-form {
+    display: flex;
+    gap: 5em;
+}
+
+.resy-form input {
+    width: 150%;
+    font-size: 1em;
+    height: 2em;
+}
+
+.resy-form button {
+    width: 150%;
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+}
