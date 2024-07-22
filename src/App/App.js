@@ -1,7 +1,11 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
+import fetchReservations from '../apiCalls';
 
 function App() {
+  useEffect(() => {
+    fetchReservations();
+  }, [])
   return (
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
